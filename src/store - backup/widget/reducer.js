@@ -1,7 +1,6 @@
 // create reducer here with initialState from selectors.js
 // create initialState here
 import * as ActionType from "./constants";
-import { combineReducers } from "redux";
 
 const INIT_STATE = {
   widgetData:[]
@@ -30,8 +29,4 @@ const applyGetWidgetSucceed = (state, action) => {
   };
 };
 
-const rootReducer = combineReducers({
-  widgetState : WidgetReducer,
-})
-
-export default rootReducer
+export default WidgetReducer;
