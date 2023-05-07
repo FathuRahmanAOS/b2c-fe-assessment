@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< Updated upstream
 import FixedContent from "../../components/templates/FixedContent";
 import RelativeContent from "../../components/templates/RelativeContent";
 import styled from "styled-components";
@@ -14,6 +15,17 @@ const LandingPage = () => {
       <RelativeContent />
       <FixedContent />
     </Container>
+=======
+// import RelativeContent from "../../components/templates/RelativeContent";
+import styled from "styled-components";
+import Homepage from "../../components/templates/Homepage";
+
+const LandingPage = () => {
+  return (
+    <div>
+      <Homepage />
+    </div>
+>>>>>>> Stashed changes
   );
 };
 
