@@ -45,7 +45,6 @@ const SectionProducts = styled.div`
 `;
 
 const ProductCategory = (props) => {
-  console.log(props.promo.detail.promo.products);
   return (
     <Container>
       <SectionTitle>

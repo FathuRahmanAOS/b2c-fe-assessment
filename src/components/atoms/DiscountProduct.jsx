@@ -7,14 +7,21 @@ const SpanDiscountProductItem = styled.span`
   line-height: 1.5em;
   padding: 0.1em 0.3em;
   color: rgb(255, 255, 255);
-  background-color: rgb(194, 24, 91);
+  /* background-color: rgb(194, 24, 91); */
   border-radius: 2px;
   height: unset;
+
+  background-color: ${(props) =>
+    props.discount === 0 ? 'white' : '#c2185b'};
 `;
 const DiscountProduct = (props) => {
   // const discount = props.discount * 100;
-  const finalDiscount = (Math.round(props.discount * 100))
-  return <SpanDiscountProductItem>{finalDiscount}%</SpanDiscountProductItem>;
+  const finalDiscount = Math.round(props.discount * 100);
+  return (
+    <SpanDiscountProductItem discount={finalDiscount}>
+      {finalDiscount}%
+    </SpanDiscountProductItem>
+  );
 };
 
 export default DiscountProduct;

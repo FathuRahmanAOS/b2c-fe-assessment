@@ -81,22 +81,21 @@ const DivSpaceDiscountProductItem = styled.div`
 `;
 
 const ProductContainer = (props) => {
-
   return (
     <DivProductItem>
       <AProductItem>
         <ImageProduct image={props.image} />
         <DivContainerProductItem>
-          <DescProduct name = {props.name}/>
+          <DescProduct name={props.name} />
           <DivSpace></DivSpace>
           <DivDicountHetProductItem>
-            <DiscountProduct discount = {props.discount}/>
+            <DiscountProduct discount={props.discount} />
             <DivSpaceDiscountProductItem></DivSpaceDiscountProductItem>
-            <LabelHetProduct het = {props.het} />
+            <LabelHetProduct het={props.het} discount={props.discount} />
           </DivDicountHetProductItem>
           <DivNettRatingProductItem>
-            <NettProduct nett = {props.nett}/>
-            <RatingProduct rating = {props.rating}/>
+            <NettProduct nett={props.nett} />
+            <RatingProduct rating={props.rating} />
           </DivNettRatingProductItem>
           <DivContainerSpace></DivContainerSpace>
           <DivSpace1></DivSpace1>
