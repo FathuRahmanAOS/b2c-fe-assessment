@@ -5,6 +5,9 @@ const Container = styled.div`
   /* width: 80%;
   height: 50%; */
 `;
+
+// di sini gk konflik
+
 const LandingPage = () => {
   return (
     <Container>
@@ -12,5 +15,7 @@ const LandingPage = () => {
     </Container>
   );
 };
+
+// test konflik remote
 
 export default LandingPage;
