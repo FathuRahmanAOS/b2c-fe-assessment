@@ -13,4 +13,6 @@ const LandingPage = () => {
   );
 };
 
+// test konflik lokal
+
 export default LandingPage;
