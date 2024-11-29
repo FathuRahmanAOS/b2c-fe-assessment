@@ -1,9 +1,32 @@
-import React from 'react'
+import React from "react";
+<<<<<<< Updated upstream
+import FixedContent from "../../components/templates/FixedContent";
+import RelativeContent from "../../components/templates/RelativeContent";
+import styled from "styled-components";
+
+const Container = styled.div`
+  width: 80%;
+  height: 50%;
+`;
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
-  )
-}
+    <Container>
+      <RelativeContent />
+      <FixedContent />
+    </Container>
+=======
+// import RelativeContent from "../../components/templates/RelativeContent";
+import styled from "styled-components";
+import Homepage from "../../components/templates/Homepage";
 
-export default LandingPage
+const LandingPage = () => {
+  return (
+    <div>
+      <Homepage />
+    </div>
+>>>>>>> Stashed changes
+  );
+};
+
+export default LandingPage;
